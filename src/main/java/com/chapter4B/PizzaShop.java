@@ -1,0 +1,42 @@
+package com.chapter4B;
+
+/**
+ * MHHoossen_213223538_3.A
+ */
+public class PizzaShop {
+
+    private String name;
+    private String regNum;
+    private double loanAmount;
+
+    public PizzaShop()
+    {}
+
+    public PizzaShop(String nm, String regNum, double amount)
+    {
+        name = nm;
+        this.regNum = regNum;
+        loanAmount = amount;
+    }
+
+    public String getName()
+    {
+        return name;
+    }
+
+    public String getRegNum()
+    {
+        return regNum;
+    }
+
+    public double getLoanAmount()
+    {
+        return loanAmount;
+    }
+
+    public double interest()
+    {
+        return loanAmount * 0.05;
+    }
+
+}
